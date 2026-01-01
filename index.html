@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>مباريات كرة القدم</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>مباريات كرة القدم</h1>
+      <p class="subtitle">قائمة المباريات — بيانات تجريبية (mock)</p>
+    </header>
+
+    <main class="container">
+      <section class="controls">
+        <label>الدوري:
+          <select id="leagueFilter">
+            <option value="all">الكل</option>
+          </select>
+        </label>
+
+        <label>التاريخ:
+          <input type="date" id="dateFilter" />
+        </label>
+
+        <button id="clearFilters">مسح الفلاتر</button>
+      </section>
+
+      <section id="matches" class="matches"></section>
+    </main>
+
+    <footer class="site-footer">
+      <small>تم الإنشاء بواسطة oussamak6547-arch — نسخة ثابتة مع بيانات تجريبية</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
